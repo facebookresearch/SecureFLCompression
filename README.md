@@ -1,16 +1,14 @@
 # Secure Federated Learning Compression
 
-This repository implements code for the paper [Reconciling Security and Communication Efficiency in Federated Learning](www.arxiv.com). In particular, we highlight the fundamental mismatch between two critical components of the FL stack:
-SECAGG protocols and uplink compression mechanisms.
-• We formulate solutions by imposing a linearity constraint on the decompression operator, as
-illustrated in Figure 1 in the case of TEE-based SECAGG.
-• We adapt the popular scalar quantization and (random) pruning compression methods for
-compatibility with the FL stack that require no changes to the SECAGG protocol.
-• For extreme uplink compression without compromising security, we propose Secure Index-
-ing (SECIND), a variant of SECAGG that supports product quantization. 
+This repository implements code for the paper [Reconciling Security and Communication Efficiency in Federated Learning](www.arxiv.com). 
+
+In particular, we highlight the fundamental mismatch between two critical components of the FL stack:
+SECAGG protocols and uplink compression mechanisms and we formulate solutions by imposing a linearity constraint on the decompression operator, as illustrated below in the case of TEE-based SECAGG. 
+
+Finally, we adapt the popular scalar quantization and (random) pruning compression methods for
+compatibility with the FL stack that require no changes to the SECAGG protocol. For extreme uplink compression without compromising security, we propose Secure Indexing (SecInd), a variant of SECAGG that supports product quantization. 
 <p align="center">
-  <img src="https://github.com/facebookresearch/SecureFLCompression
-/blob/main/assets/summary.png">
+  <img src="assets/summary.png">
 </p>
 
 ## Installation
